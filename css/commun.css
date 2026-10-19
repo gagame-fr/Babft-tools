@@ -10,10 +10,13 @@ nav {
     gap: var(--gap_nav);
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: var(--couleur_active_nav);
 }
 
-nav div a {
+#btn_dark_mode {
+    cursor: pointer;
+}
+nav div a, p {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.45);
     font-size: var(--font_nav);

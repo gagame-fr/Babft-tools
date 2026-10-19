@@ -1,6 +1,6 @@
 .zone_1o1 {
     height: calc( (var(--hauteur_fenetre) - var(--hauteur_nav))/2);
-    background-color: rgb(255, 246, 231);
+    background-color: var(--couleur_active_back1);
 }
 
 .title{
@@ -18,7 +18,7 @@
 
 .zone_1o2 {
     height: calc( (var(--hauteur_fenetre) - var(--hauteur_nav))/2 );
-    background-color: rgb(255, 246, 231);
+    background-color: var(--couleur_active_back1);
     display: flex;
     justify-content: center;
     align-items: center;
