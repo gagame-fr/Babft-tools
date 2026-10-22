@@ -1,54 +1,57 @@
-.zone_1o1 {
-    height: calc( (var(--hauteur_fenetre) - var(--hauteur_nav))/2);
-    background-color: var(--couleur_active_back1);
+* {
+    margin: 0;
+    padding: 0;
+    opacity: 0;
 }
 
-.title{
-    color: rgba(107, 106, 60, 0.6);
-    transform: translateY(30px);
-    transition-duration: 0.2s;
-    transition-property: transform;
-}
+/* 2. Condition pour les écrans d'ordinateurs */
+@media screen and (orientation: landscape) {
+  
+    * {
+        margin: 0;
+        padding: 0;
+        opacity: 1;
+    }
 
-.zone_1o1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc( var(--hauteur_fenetre)/2 );
+        margin: 0 5%;
+    }
 
-.zone_1o2 {
-    height: calc( (var(--hauteur_fenetre) - var(--hauteur_nav))/2 );
-    background-color: var(--couleur_active_back1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-}
+    .title h1 {
+        color: var(--couleur_font);
+    }
 
-.zone_1o2 div {
-    margin: auto var(--gap_zone_1o2);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 70%;
-    height: 70%;
-    border: solid 5px rgba(0, 0, 0, 0.2);
-    border-radius: 50px;
-        transform: translateY(30px);
-    transition-duration: 0.4s;
-    transition-property: transform;
-}
+    .title h1 a {
+        color: var(--couleur_font);
+        text-decoration: underline  ;
+    }
 
-.zone_1o2 div a {
-    margin: 30px;
-    text-decoration: none;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.9);
-    font-size: var(--font_nav);
-}
+    .boxes {
+        margin: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 
-.zone_1o2 div p {
-    color: rgba(0, 0, 0, 0.9);
-    margin: 40px;
-    text-align: left;
+    .boxes div {
+        height: 100%;
+        width: 25%;
+        border: 1px var(--couleur_font) solid;
+        border-radius: 20px;
+    }
+
+    .boxes div a {
+        text-decoration: none;
+    }
+
+    .boxes div h3, .boxes div p {
+        color: var(--couleur_font);
+        text-align: center;
+        margin: 5%;
+    }
 }

@@ -6,8 +6,9 @@
         <meta charset="utf-8">
         <title>Babft tools</title>
         <link rel="icon" href="/images/icone.jpg"> 
-        <link rel="stylesheet" href="/css/commun.css">
         <link rel="stylesheet" href="/css/accueil.css">
+        <link rel="stylesheet" href="/css/commun.css">
+        
     </head>
 
 
@@ -15,35 +16,37 @@
         
 
         <nav>
-            <div><a href="accueil.html">Homepage</a></div>
-            <div><a href="credits.html">Credits</a></div>
-            <div id="btn_dark_mode"><p>Dark_mode</p></div>
+            <div class="left_nav">
+                <div><a href="credits.html">Credits</a></div>
+            </div>
+
+            <div class="middle_nav">
+                <div><a href="accueil.html">Homepage</a></div>
+            </div>
+            
+            <div class="right_nav">
+                <div id="btn_theme"><p>Dark theme</p></div>
+            </div>
         </nav>
 
+
+
         <main>
-            <div class="zone_1o1">
-                <h1 class="title">A simple website that does <u>repetitive calculations</u> for you !</h1>
-            </div>
-            <div class="zone_1o2">
-                <div>
-                    <a href="triangle.html">Triangle</a>
-                    <p> Can be used to calculate the hypotenuse of a right triangles with the length of the other sides</p>
+            <div class="zone_1">
+                <div class="title">
+                    <h1>A website that does your calculations for <a href="">Build a Boat For Treasure</a></h1>
                 </div>
-                <div>
-                    <a href="circle.html">Circle</a>
-                    <p>Can be used to make perfect circles with diferent radius and sides but you must enter an even number of sides</p>
+                <div class="boxes">
+                        <div><a href="triangle.html"><h3>Triangle</h3><p>Calculates the hypotenuse of triangles for you</p></a></div>
+                        <div><a href="circle.html"><h3>Circle</h3><p>Creates perfect circles depending the number of sides (must be even) and the radius</p></a></div>
+                        <div><a href="gears.html"><h3>Gear</h3><p>Creates gaers depending the number of teeth, radius and module</p></a></div>
                 </div>
-                <div>
-                    <a href="gear.html">Gear</a>
-                    <p>Can be used to make gears depending the module of teeth, radius of the gear and number of teeth</p>
-                </div>
-            </div>
         </main>
 
-        <footer>
-            <div class="zone_1o3">
 
-            </div>
+
+        <footer>
+            
         </footer>
 
         <script src="/script.js"></script>
