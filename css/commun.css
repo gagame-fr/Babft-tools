@@ -1,18 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-    opacity: 0;
-}
+    *  {
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+    }
 
-/* 2. Condition pour les écrans d'ordinateurs */
 @media screen and (orientation: landscape) {
   
-    * {
+    *  {
         margin: 0;
         padding: 0;
         opacity: 1;
     }
-
 
     nav {
         height: var(--hauteur_nav);
@@ -65,5 +63,8 @@
     footer {
         height: var(--hauteur_footer);
         background-color: var(--couleur_footer);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

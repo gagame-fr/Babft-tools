@@ -106,3 +106,19 @@ taille_fentre();
 window.addEventListener('resize', taille_fentre);
 
 window.addEventListener('scroll', dynamic_nav);
+
+
+function calculer_triangle() {
+    const short_side = parseFloat(document.getElementById("nombre1").value)
+    const long_side = parseFloat(document.getElementById("nombre2").value)
+
+    const hypothenuse = (short_side**2 + long_side**2)**0.5
+    const angle = 90 - Math.atan(long_side/short_side) * (180/ Math.PI)
+
+
+    document.getElementById('resultat').innerText = "The hypothenuse's lenght is : " + hypothenuse;
+    document.getElementById('resultat2').innerText = "You have to rotate the piece from the vertex of the longest side by (in degrees): " + angle;
+}
+
+
+

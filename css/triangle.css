@@ -1,0 +1,35 @@
+@media screen and (orientation: landscape) {
+
+    .title {
+        display: flex;
+        justify-content: center;
+        height: calc( var(--hauteur_fenetre)/5 );
+        padding: 10% 5% 0 5%;
+    }
+
+    .title h1 {
+        color: var(--couleur_font);
+    }
+
+    .title h1 a {
+        color: var(--couleur_font);
+        text-decoration: underline  ;
+    }
+
+    .variable_a_calc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: calc( var(--hauteur_fenetre)/3 );
+        gap: 5%;
+    }
+
+    p {
+        color: var(--couleur_font);
+    }
+
+    .resultat {
+        color: var(--couleur_font);
+    }
+}
