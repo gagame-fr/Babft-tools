@@ -5,9 +5,9 @@
     <head>
         <meta charset="utf-8">
         <title>Babft tools | Homepage</title>
-        <link rel="icon" href="/images/icone.jpg"> 
-        <link rel="stylesheet" href="/css/triangle.css">
-        <link rel="stylesheet" href="/css/commun.css">
+        <link rel="icon" href="../images/icone.jpg"> 
+        <link rel="stylesheet" href="../css/triangle.css">
+        <link rel="stylesheet" href="../css/commun.css">
         
     </head>
 
@@ -31,26 +31,37 @@
 
             
             <div class="zone_1">
+                
                 <div class="title">
-                    <h1>Triangle calculator</a></h1>
+                        <h1>Triangle calculator</a></h1>
                 </div>
 
-                <div class="variable_a_calc">
+                <div class="style_box">
+
+                    
+
+                    <div class="variable_a_calc">
                         <div>
                             <p>Shortest size<p>
-                            <input type="number", min="0", max="1000000", id="nombre1">
+                        </div>
+                        <div>
+                            <input type="number", min="0", max="1000000", id="nombreT1">
                         </div>
                         <div>
                             <p>Longest size<p>
-                            <input type="number", min="0", max="1000000", id="nombre2">
+                        </div>
+                        <div>
+                            <input type="number", min="0", max="1000000", id="nombreT2">
                         </div>
                         <div>
                             <input type="submit", value="Calc", onclick="calculer_triangle()">
                         </div>
                         
-                        <div class="resultat" id="resultat">The hypothenuse's lenght is (in studs): ___</div>
-                        <div class="resultat" id="resultat2">You have to rotate the piece from the vertex of the longest side by (in degrees): ___</div>
+                        <div class="resultat" id="resultatT1">The hypothenuse's lenght is (in studs): ___</div>
+                        <div class="resultat" id="resultatT2">You have to rotate the piece from the vertex of the longest side by (in degrees): ___</div>
+                    </div>
                 </div>
+                
         </div>
         </main>
 

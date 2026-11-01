@@ -3,7 +3,7 @@
     .title {
         display: flex;
         justify-content: center;
-        height: calc( var(--hauteur_fenetre)/5 );
+        height: calc( var(--hauteur_fenetre)/8 );
         padding: 10% 5% 0 5%;
     }
 
@@ -23,7 +23,9 @@
         flex-direction: column;
         height: calc( var(--hauteur_fenetre)/3 );
         gap: 5%;
+        margin: 5%;
     }
+
 
     p {
         color: var(--couleur_font);
@@ -32,4 +34,12 @@
     .resultat {
         color: var(--couleur_font);
     }
+}
+
+.style_box {
+    height: fit-content;
+    margin: 0 30%;
+    background: linear-gradient(#bdbdbd, #888888);
+    border: solid var(--couleur_font) 1px;
+    border-radius: 20px;
 }
