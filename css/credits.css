@@ -1,0 +1,30 @@
+@media screen and (orientation: landscape) {
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc( var(--hauteur_fenetre)/2 );
+        margin: 0 5%;
+    }
+
+    .title h1 {
+        color: var(--couleur_font);
+    }
+
+    .title h1 a {
+        color: var(--couleur_font);
+        text-decoration: underline  ;
+    }
+
+    .dabl_credits {
+        display: flex;
+        justify-content: center;
+    }
+
+    .dabl_credits p {
+        font-size: large;
+        color: var(--couleur_font);
+    }
+
+}
