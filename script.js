@@ -1,9 +1,9 @@
-// Déclaration des variables ou constantes
+// ------------------------------------------------- Déclaration des variables ou constantes -------------------------------------------------
 
 let largeur_fenetre = window.innerWidth;
 let hauteur_fenetre = window.innerHeight;
 
-let couleur_theme = "clair"
+let mode_sombre = localStorage.getItem('darkMode') === 'true';
 let couleur_back1 = "#F8FAFC"
 let couleur_font = "black"
 document.documentElement.style.setProperty('--couleur_font', couleur_font)
@@ -16,7 +16,9 @@ let box_shadow = "none"
 
 const btn_theme = document.getElementById('btn_theme')
 
-// Déclaration des fonctions
+
+
+// ------------------------------------------------- Déclaration des fonctions -------------------------------------------------
 function taille_fentre() {
     let largeur_fenetre = window.innerWidth;
     let hauteur_fenetre = window.innerHeight;
@@ -33,21 +35,9 @@ function taille_fentre() {
 
 
 
-
-function changement_theme() {
-    if (couleur_theme === "clair" ) {
-        couleur_theme = "sombre"
-    } else {
-        couleur_theme = "clair"
-    }
-    return couleur_theme
-}
-
-
-
-
 btn_theme.addEventListener('click', () => {
-    couleur_theme = changement_theme();
+    mode_sombre = !mode_sombre;
+    localStorage.setItem('darkMode', mode_sombre);
     changements_couleur();
     dynamic_nav();
 });
@@ -56,7 +46,9 @@ btn_theme.addEventListener('click', () => {
 
 
 function changements_couleur() {
-    if (couleur_theme === "clair"){
+
+
+    if (mode_sombre === false){
         couleur_back1 = "#F8FAFC"
         couleur_footer = "#e0e0e0"
         couleur_font = "black"
@@ -83,7 +75,7 @@ function dynamic_nav() {
         couleur_nav = "transparent"
         box_shadow = "transparent"
     } else {
-        if (couleur_theme === "clair"){
+        if (mode_sombre === false){
             couleur_nav = "white"
             box_shadow = "0 2px 4px 0 rgba(0,0,0,.2)"
         } else {
@@ -97,12 +89,12 @@ function dynamic_nav() {
     
 }
 
-// Initialisation des fonctions 
+// ------------------------------------------------- Initialisation des fonctions -------------------------------------------------
 taille_fentre();
+changements_couleur()
 
 
-
-// EventListeners du site
+// ------------------------------------------------- EventListeners du site -------------------------------------------------
 window.addEventListener('resize', taille_fentre);
 
 window.addEventListener('scroll', dynamic_nav);

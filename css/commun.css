@@ -64,7 +64,40 @@
         height: var(--hauteur_footer);
         background-color: var(--couleur_footer);
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+
+    }
+
+    .left_items {
+        width: 25%;
+    }
+
+    .right_items {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_links a {
+        color: var(--couleur_font);
+        text-decoration: none;
+    }
+
+    
+    footer h3 {
+        color: var(--couleur_font);
+    }
+
+    .footer_links a:hover {
+        color: var(--couleur_font);
+        text-decoration: underline;
+        transition-property: text-decoration;
+        transition-duration: 1s;
     }
 }
